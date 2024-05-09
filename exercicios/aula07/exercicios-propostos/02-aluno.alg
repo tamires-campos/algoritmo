@@ -1,0 +1,25 @@
+algoritmo "SituacaoAluno"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// =============================================================
+// Algoritmo para verificar se um aluno esta APROVADO ou REPROVADO
+// =============================================================
+var
+   nota1, nota2, media: Real
+inicio
+      EscrevaL("-----------------------")
+      EscrevaL(" ESCOLA ESTADUAL ABC   ")
+      EscrevaL("-----------------------")
+      Escreva("Primeira Nota: ")
+      Leia(nota1)
+      Escreva("Segunda Nota: ")
+      Leia(nota2)
+      media <- (nota1 + nota2)/2
+      EscrevaL("-----------------------")
+      EscrevaL(" MEDIA: ", media:3:1)
+      Se (media >= 7) entao
+         EscrevaL(" ALUNO APROVADO ")
+      senao
+         EscrevaL(" ALUNO REPROVADO ")
+      FimSe
+      EscrevaL("-----------------------")
+fimalgoritmo
